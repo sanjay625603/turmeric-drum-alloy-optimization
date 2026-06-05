@@ -1,0 +1,90 @@
+# Turmeric Drum Alloy Optimization
+
+## Project Overview
+
+This project focuses on the computational design and optimization of a wear-resistant, food-compatible alloy for a turmeric separator drum used in industrial turmeric processing.
+
+The work combines:
+
+* Materials engineering
+* Computational alloy design
+* CALPHAD methodology
+* Python-based virtual alloy generation
+
+The goal is to identify an alloy suitable for:
+
+* corrosion resistance
+* abrasive wear resistance
+* food-processing compatibility
+* manufacturability
+
+for a rotary turmeric separator drum.
+
+---
+
+## Alloy System
+
+The candidate alloy family explored:
+
+**Fe–Cr–Ni–Mo–Mn**
+
+based on a modified stainless-steel concept.
+
+Target composition window:
+
+| Element | Range         |
+| ------- | ------------- |
+| Cr      | 16–19 wt%     |
+| Ni      | 6–9 wt%       |
+| Mo      | 1–3 wt%       |
+| Mn      | 1–4 wt%       |
+| C       | 0.01–0.05 wt% |
+| Si      | 0.2–0.8 wt%   |
+| Fe      | Balance       |
+
+---
+
+## Candidate C Baseline
+
+Target alloy:
+
+Fe(balance)-Cr18-Ni8-Mo2.5-Mn2
+
+Designed to achieve:
+
+* High FCC stability
+* Low sigma phase formation
+* Good corrosion resistance
+* Improved wear resistance
+
+---
+
+## Files
+
+### generate_alloys.py
+
+Generates virtual alloy compositions around Candidate C.
+
+### candidate_c_alloys.xlsx
+
+Generated alloy compositions for CALPHAD evaluation.
+
+### results/
+
+Stores Thermo-Calc outputs and ranked alloys.
+
+---
+
+## Workflow
+
+Python → Alloy Generation → Thermo-Calc → CALPHAD → Ranking → Material Selection
+
+---
+
+## Future Work
+
+* Thermo-Calc phase stability analysis
+* Optimization of FCC/BCC phase fractions
+* Sigma phase suppression
+* Cost-performance optimization
+* Wear resistance modeling
